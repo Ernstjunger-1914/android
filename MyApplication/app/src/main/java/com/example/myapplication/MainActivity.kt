@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         // layout button1이라는 ID로 선언된 뷰에 클릭 이벤트 리스너 등록
         button1.setOnClickListener{
+            // Intent로 BMIActivity를 타겟으로 지정 후, startActivity로 실행
             startActivity(Intent(this@MainActivity, BMIActivity::class.java))
+        }
+
+        varbtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VariableActivity::class.java))
         }
     }
 }

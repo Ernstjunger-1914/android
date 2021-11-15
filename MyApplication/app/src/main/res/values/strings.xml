@@ -8,4 +8,8 @@
     <string name="kg">kg</string>
     <string name="result">키와 체중을 입력 후. BMI 확인 버튼을 누리시오.</string>
     <string name="bmibutton">BMI 계산</string>
+    <string name="variablekotlin">변수 Kotlin</string>
+    <string name="activityvariable">Activity 시작시간</string>
+    <string name="clickchk">버튼 클릭 횟수</string>
+    <string name="clickme">Click Me</string>
 </resources>
