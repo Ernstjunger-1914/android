@@ -21,5 +21,9 @@ class MainActivity : AppCompatActivity() {
         varbtn.setOnClickListener {
             startActivity(Intent(this@MainActivity, VariableActivity::class.java))
         }
+
+        controlbtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ControllerActivity::class.java))
+        }
     }
 }

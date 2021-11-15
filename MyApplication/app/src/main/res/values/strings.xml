@@ -1,15 +1,22 @@
 <resources>
     <string name="app_name">My Application</string>
+
     <string name="java">VIEW BINDING JAVA</string>
     <string name="kotlin">VIEW BINDING KOTLIN</string>
+    <string name="variablekotlin">변수 Kotlin</string>
+    <string name="controlkotlin">흐름제어 Kotlin</string>
+
     <string name="input1">키를 입력하시오.</string>
     <string name="input2">체중을 입력하시오.</string>
     <string name="cm">cm</string>
     <string name="kg">kg</string>
     <string name="result">키와 체중을 입력 후. BMI 확인 버튼을 누리시오.</string>
     <string name="bmibutton">BMI 계산</string>
-    <string name="variablekotlin">변수 Kotlin</string>
+
     <string name="activityvariable">Activity 시작시간</string>
     <string name="clickchk">버튼 클릭 횟수</string>
     <string name="clickme">Click Me</string>
+
+    <string name="exe">실행</string>
+    <string name="inputnumber">숫자를 입력하시오.</string>
 </resources>
