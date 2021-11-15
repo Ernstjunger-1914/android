@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="java">VIEW BINDING JAVA</string>
+    <string name="kotlin">VIEW BINDING KOTLIN</string>
+    <string name="input1">키를 입력하시오.</string>
+    <string name="input2">체중을 입력하시오.</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="result">키와 체중을 입력 후. BMI 확인 버튼을 누리시오.</string>
+    <string name="bmibutton">BMI 계산</string>
+</resources>
