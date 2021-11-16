@@ -31,7 +31,7 @@ class ControllerActivity : AppCompatActivity() {
                 in 1..4 -> {
                     exebtn.text = "실행 - 4"
                 }
-                9, 99 -> {
+                9, 99, 999, 9999, 99999, 999999 -> {
                     exebtn.text = "실행 - 비둘기"
                 } else -> {
                     exebtn.text = "실행"

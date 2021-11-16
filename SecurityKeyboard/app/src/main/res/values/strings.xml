@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecurityKeyboard</string>
+
+    <string name="input_passwd">비밀번호를 입력하시오.</string>
+    <string name="submit">확인</string>
+    <string name="delete">지우기</string>
+</resources>

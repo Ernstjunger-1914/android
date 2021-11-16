@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputpasswordlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true" />
+
+    <TextView
+        android:id="@+id/password_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inputpasswordlabel"
+        android:layout_above="@+id/password_viewflipper" />
+
+    <ViewFlipper
+        android:id="@+id/password_viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/firstViewFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"
+            android:orientation="vertical">
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0, 1, 2">
+                <TableRow>
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/submitbtn"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/submitdelete"
+                        android:text="@string/submit"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_height="100dp"
+                        android:background="@drawable/keybord"
+                        android:textSize="30sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                    <Button
+                        android:id="@+id/deletebtn"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/submitdelete"
+                        android:textSize="20sp"
+                        android:text="@string/delete" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ViewFlipper>
+</RelativeLayout>
