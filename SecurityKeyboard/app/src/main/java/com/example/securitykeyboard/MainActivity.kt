@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var flipper: ViewFlipper
     private lateinit var tableLayout: TableLayout
     private lateinit var textView : TextView
+    // 도중에 custom keyboard 위로 softkeyboard가 나타나게 하지 않기 위해
     private lateinit var inputmethonmanager: InputMethodManager
 
     private val mActivity: Activity? = this
@@ -71,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                 if (flipper.currentView.id == R.id.firstViewFlipper) {
                     flipper.displayedChild = 0
                     var showtxt = StringBuilder(textView.text)
-                    showtxt.append("\n"+currentText)
+                    showtxt.append("\n" + currentText)
                     textView.text = showtxt.toString()
                     currentText.clear()
                     editText.text.clear()
@@ -103,6 +104,7 @@ class MainActivity : AppCompatActivity() {
                 for(i in 1..passWordLength) {
                     editText.append("*")
                 }
+                
                 editText.setSelection(curIndex - 1)
             }
         }
