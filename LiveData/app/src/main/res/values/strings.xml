@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveData</string>
+
+    <string name="btntext">입력</string>
+</resources>

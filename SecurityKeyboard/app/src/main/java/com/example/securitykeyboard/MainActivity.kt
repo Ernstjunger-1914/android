@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                 for(i in 1..passWordLength) {
                     editText.append("*")
                 }
-                
+
                 editText.setSelection(curIndex - 1)
             }
         }
