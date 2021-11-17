@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             setOnClickListener { v: View ->
                 inputmethonmanager.hideSoftInputFromWindow(editText.windowToken, 0)
 
-                if(flipper.currentView.id != R.id.firstViewFlipper) {
+                if (flipper.currentView.id != R.id.firstViewFlipper) {
                     reOrderKeyboard(btnWidth)
                     flipper.visibility = View.VISIBLE
                     flipper.displayedChild = 1
@@ -67,11 +67,11 @@ class MainActivity : AppCompatActivity() {
         editText.requestFocus()
 
         findViewById<Button>(R.id.submitbtn).apply {
-            setOnClickListener { v: View ->
-                if(flipper.currentView.id == R.id.firstViewFlipper) {
+            setOnClickListener{ v : View ->
+                if (flipper.currentView.id == R.id.firstViewFlipper) {
                     flipper.displayedChild = 0
                     var showtxt = StringBuilder(textView.text)
-                    showtxt.append("\n" + currentText)
+                    showtxt.append("\n"+currentText)
                     textView.text = showtxt.toString()
                     currentText.clear()
                     editText.text.clear()
@@ -83,24 +83,24 @@ class MainActivity : AppCompatActivity() {
             setOnClickListener { v: View ->
                 val curIndex = editText.selectionStart
                 var passwordStr = editText.text.toString()
-                var passWordLendth = passwordStr.length
+                var passWordLength = passwordStr.length
 
-                if(curIndex == 0 || passWordLendth == 0) {
+                if(curIndex == 0 || passWordLength == 0) {
                     return@setOnClickListener
                 }
 
                 passwordStr.apply {
-                    passwordStr = substring(0, curIndex - 1) + substring(curIndex, passWordLendth)
+                    passwordStr = substring(0, curIndex - 1) + substring(curIndex, passWordLength)
                 }
 
                 currentText.apply {
-                    currentText = StringBuilder(toString().substring(0, curIndex - 1) + toString().substring(curIndex, passWordLendth))
+                    currentText = StringBuilder(toString().substring(0, curIndex - 1) + toString().substring(curIndex, passWordLength))
                 }
 
-                passWordLendth = passwordStr.length
+                passWordLength = passwordStr.length
                 editText.setText("")
 
-                for(i in 1..passWordLendth) {
+                for(i in 1..passWordLength) {
                     editText.append("*")
                 }
                 editText.setSelection(curIndex - 1)
