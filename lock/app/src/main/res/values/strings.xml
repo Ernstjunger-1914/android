@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lock</string>
+
+    <string name="reset">정답 및 오답 횟수 초기화</string>
+    
+    <string name="any_text">Enter any text</string>
+    <string name="load">불러오기</string>
+    <string name="save">저장</string>
+</resources>
