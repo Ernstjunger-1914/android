@@ -135,9 +135,9 @@ class FileExActivity : AppCompatActivity() {
                         // 권한 요청 성공
                         granted = true
                     } else -> {
-                        // 사용자가 권한을 허용하지 않음
-                        granted = false
-                    }
+                    // 사용자가 권한을 허용하지 않음
+                    granted = false
+                }
                 }
             }
         }
@@ -153,8 +153,8 @@ class FileExActivity : AppCompatActivity() {
                 fileOutputStream.write(text.toByteArray())
                 fileOutputStream.close()
             } else -> {
-                Toast.makeText(applicationContext, "권한이 없습니다.", Toast.LENGTH_SHORT).show()
-            }
+            Toast.makeText(applicationContext, "권한이 없습니다.", Toast.LENGTH_SHORT).show()
+        }
         }
     }
 
@@ -163,9 +163,9 @@ class FileExActivity : AppCompatActivity() {
             granted -> {
                 return FileInputStream(File(filepath)).reader().readText()
             } else -> {
-                Toast.makeText(applicationContext, "권한이 없습니다.",Toast.LENGTH_SHORT).show()
-                return ""
-            }
+            Toast.makeText(applicationContext, "권한이 없습니다.",Toast.LENGTH_SHORT).show()
+            return ""
+        }
         }
     }
 }
