@@ -26,7 +26,7 @@ class UserAdapter(val context: Context, val UserList: ArrayList<User>): BaseAdap
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.list_item_user, null)
 
-        val profile = view.findViewById<ImageView>(R.id.iv_profile)
+        val profile = view.findViewById<ImageView>(R.id.imageView)
         val name = view.findViewById<TextView>(R.id.tv_name)
         val age = view.findViewById<TextView>(R.id.tv_age)
         val greet = view.findViewById<TextView>(R.id.tv_greet)
