@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Camera</string>
+
+    <string name="Camera_Button_Text">카메라 촬영</string>
+</resources>
