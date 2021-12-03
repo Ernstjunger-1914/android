@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">View</string>
+
+    <string name="chk_box">동의하십니까?</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="search">검색</string>
+</resources>
