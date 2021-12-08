@@ -47,6 +47,7 @@ class SqliteHelper(context: Context, name: String, version: Int) : SQLiteOpenHel
         }
         cursor.close()
         rd.close()
+
         return list
     }
 

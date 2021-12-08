@@ -28,11 +28,11 @@
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:text="@string/memo_detail"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/delete"
-        app:layout_constraintStart_toEndOf="@id/textNo" />
+        app:layout_constraintStart_toEndOf="@id/textNo"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textDatetime"
@@ -41,6 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/time"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textContent" />
@@ -53,6 +54,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="32dp"
         android:text="@string/delete"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
