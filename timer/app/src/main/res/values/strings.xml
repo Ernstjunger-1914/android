@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">timer</string>
+
+    <string name="start">시작</string>
+    <string name="end">종료</string>
+    <string name="time">00 : 00</string>
+</resources>
