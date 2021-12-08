@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
             val minute = String.format("%02d", total/60)
             val second = String.format("%02d", total%60)
 
-            timer.text = "$minute:$second"
+            timer.text = "$minute : $second"
         }
     }
 
