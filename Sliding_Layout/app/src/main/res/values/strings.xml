@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sliding_Layout</string>
+
+    <string name="background_layout">Background Layout</string>
+    <string name="touch_block">터치잠금</string>
+    <string name="open">열기</string>
+    <string name="disable">비활성화</string>
+    <string name="slideoffset">slideOffset</string>
+    <string name="textview">TextView</string>
+</resources>
