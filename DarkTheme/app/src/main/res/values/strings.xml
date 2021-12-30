@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dark-Theme</string>
+
+    <string name="theme_conf">테마 설정</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="default_value">Default</string>
+</resources>
